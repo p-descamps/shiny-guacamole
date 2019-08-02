@@ -1,101 +1,75 @@
-!urxvt fonts:
+! Typewriter light
+! Scheme: Typewriter (https://github.com/logico-dev)
+! Based on: Alexandre Gavioli (https://github.com/Alexx2/)
 
-! AADB0F -> AADB0F
-
-urxvt*letterSpace: 0
-!enabling clickable links
-URxvt.perl-ext-common: default,matcher,tabbedex,vtwheel,clipboard
-!tabbed
-URxvt.matcher.button:   1
-URxvt.perl-ext:      default,url-select
-URxvt.keysym.M-u: perl:url-select:select_next
-    URxvt.url-select.launcher:   /usr/bin/icecat -new-tab
-URxvt.url-select.underline: true
-
-!disable the fucking bell
-URxvt.insecure: false
-
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-
-!urxvt scrolling options and cursor style:
-
-
-URxvt*saveLines: 300000
-!URxvt.scrollBar_right: false
-*scrollBar: false
-URxvt*cursorBlink: true
-URxvt*cursorUnderline: true
-URxvt*cursorColor: #f33e45
-URxvt.tabbedex.autohide: yes
-URxvt.tabbedex.tabbar-fg: 2
-URxvt.tabbedex.tabbar-bg: 0
-URxvt.tabbedex.tab-fg:    10
-URxvt.tabbedex.tab-bg:    0
-URxvt.tabbedex.title: yes
-URxvt.tabbedex.new-button:  no
+#define base00 #eeeeee
+#define base01 #e3e3e3
+#define base02 #00BAFF
+#define base03 #ababab
+#define base04 #525252
+#define base05 #464646
+#define base06 #252525
+#define base07 #101010
+#define base08 #7c7c7c
+#define base09 #999999
+#define base0A #a0a0a0
+#define base0B #8e8e8e
+#define base0C #868686
+#define base0D #686868
+#define base0E #747474
+#define base0F #5e5e5e
+#define base0G #E41D91
+#define base0H #009900
 
 
-urxvt*allow_bold: false
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base02
+*.cursorBlink:  true
+*.cursorUnderline: true
+*.scrollBar:		false
 
-! FUll screen
-URxvt.keysym.F11: perl:fullscreen:switch
+! Black
+*.color0:       base00
+*.color8:       base0A
 
+! Red
+*.color1:       base08
+*.color9:       base08
 
-URxvt*colorIT: #666666
-URxvt*colorUL: #FFFFFF
-URxvt*colorBD: #dedede
+! Green
+*.color2:       base05
+*.color10:      base0B
 
-!black  0=htop colors dedede
- *color0:  #2d2d2d
- *color8: #dedede
-!red
- *color1:  #dedede
- *color9:  #dedede
-!green
- *color2:  #d64937
- *color10: #dedede
-!yellow
- *color3:  #dedede
- *color11: #dedede
-!blue   ranger folders
- *color4:  #d64937
- *color12: #d64937
-!magenta
- *color5:  #dedede
- *color13: #dedede
-!cyan
- *color6:  #dedede
- *color14: #dedede
-!white
- *color7:  #dedede
- *color15: #dedede
+! Yellow
+*.color3:       base0A
+*.color11:      base0G
 
+! Blue
+*.color4:       base0D
+*.color12:      base0D
 
+! Magenta
+*.color5:       base0E
+*.color13:      base0H
 
-URxvt*foreground: #D3D3D3
-!URxvt*background: #000000
-URxvt*background: #323232
+! Cyan
+*.color6:       base0C
+*.color14:      base02
 
+! White
+*.color7:       base05
+*.color15:      base07
 
-!red
-URxvt*color1: #f33e45
-URxvt*color9: #f33e45
-!green
-URxvt*color2: #f33e45
-URxvt*color10: #f33e45
-!yellow
-
-!blue
-URxvt*color4: #7193ae
-URxvt*color12: #7193ae
-!magenta
-URxvt*color5: #f33e45
-URxvt*color13: #f33e45
-!cyan
-URxvt*color6: #7193ae
-URxvt*color14: #7193ae
-!white
-URxvt*color7: #D3D3D3
-URxvt*color15: #D3D3D3
-
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
