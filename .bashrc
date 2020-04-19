@@ -1,42 +1,43 @@
-#
-# ~/.bashrc
-#
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-export EDITOR='vim'
-
-PS1='\u \W $ '
-theme='steamburn'
-
-# cfg aliases
-alias cfsh='vim ~/.bashrc'
-alias cfvi='vim ~/.vimrc'
-
-alias cfaw='vim ~/.config/awesome/rc.lua'
-alias cfth='vim ~/.config/awesome/themes/steamburn/theme.lua'
-alias cfrf='vim ~/.config/awesome/rfile'
-
-alias cffc='vim ~/.funcs/usr'
-alias cfkn='vim ~/.Xprofile; xrdb ~/.Xprofile'
-alias cfyt='vim ~/.youtube'
+export EDITOR="vim"
 
 # dir shortcuts
-alias cA='cd ~/.config/awesome'
-alias cT="cd ~/.config/awesome/themes/$theme"
+alias css='cd ~/documents.d/scl'
+
+alias cch='cd ~/documents.d/scl/chn/'
+alias caa='cd ~/.config/awesome'
+alias ctt="cd ~/.config/awesome/themes/$theme"
+alias ctp='cd ~/downloads.d/mus/tpt'
 
 # git aliases
 alias gadd='git add'
 
+#print aliases
+# localhost:631 is cups admin pagina
+
+alias snmp_scan="CUPS_DEBUG_LEVEL=2 /usr/lib/cups/backend/snmp @LOCAL 2>&1| tee snmp.log"
+
 # syst aliases
+alias pq="pacman -Qs"
+alias fl='flashvoc "'
+alias h='habitctl'
+alias ggl='google-chrome-beta'
+alias mmb='mp3blaster'
+alias td='termdown'
+alias acr='asciinema rec -i2'
+alias acp='asciinema play'
+alias kl='killall'
+alias dd='dcfldd'
+alias ed="$EDITOR"
 alias ll='ls -la'
 alias la='ls -A'
-alias wf='systemctl poweroff'
-alias Ss='systemctl suspend'
+alias ss='systemctl suspend'
+alias sleepstand='systemctl suspend' # heehee
+alias sp='systemctl poweroff'
 alias hu='redshift -P -O'
 alias ls='ls --color=auto'
 alias jx='journalctl -xe'
 alias grep='grep --color=auto'
+alias pth='python3'
 
 alias bctl='bluetoothctl'
 
