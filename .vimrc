@@ -1,9 +1,9 @@
-set tabstop=2 number hls shiftwidth=4 relativenumber
+set tabstop=2 number hls shiftwidth=4
 filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 syntax on
 colorscheme typewriter
- "let g:airline_theme = 'typewriter'
+let g:airline_theme = 'typewriter'
 let g:texflavor = 'latex'
 
 " nmap <F12> :Get <bar> Limelight!!<CR>"

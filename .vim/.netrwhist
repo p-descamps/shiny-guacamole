@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/ghoul/documents.d/scl/chn'
 let g:netrw_dirhist_8='/home/ghoul/.vim'
 let g:netrw_dirhist_7='/home/ghoul/misc'
 let g:netrw_dirhist_6='/home/ghoul'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_3='/home/ghoul/.config'
 let g:netrw_dirhist_2='/home/ghoul/.config/vmn'
 let g:netrw_dirhist_1='/home/ghoul/dotfiles.d/.vim'
 let g:netrw_dirhist_0='/home/ghoul'
-let g:netrw_dirhist_9='/home/ghoul/.android'

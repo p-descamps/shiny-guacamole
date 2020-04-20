@@ -2,7 +2,6 @@ export EDITOR="vim"
 
 # dir shortcuts
 alias css='cd ~/documents.d/scl'
-
 alias cch='cd ~/documents.d/scl/chn/'
 alias caa='cd ~/.config/awesome'
 alias ctt="cd ~/.config/awesome/themes/$theme"
